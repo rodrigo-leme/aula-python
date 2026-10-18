@@ -11,3 +11,18 @@ Entre 18.5 e 25: Peso Ideal
 Acima de 40: Obesidade Mórbida"""
 
 
+peso = float(input('Digite seu peso: '))
+altura = float(input('Digite sua altura: '))
+
+imc = peso / (altura ** 2)
+
+if imc < 18.5:
+    print('Abaixo do Peso')
+elif 18.6 < imc < 25:
+    print('Peso Ideal')
+elif 26 < imc < 30:
+    print('Sobrepeso')
+elif 31 < imc < 40:
+    print('Obesidade')
+else:
+    print('Obesidade Mórbida')
